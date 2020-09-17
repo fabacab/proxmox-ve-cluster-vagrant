@@ -23,7 +23,7 @@ end.join(';')
 Vagrant.configure('2') do |config|
   config.vagrant.plugins = "vagrant-reload"
 
-  config.vm.box = 'proxmox-ve-amd64'
+  config.vm.box = 'anarchotechnyc/proxmox-ve'
   config.vm.provider :libvirt do |lv, config|
     lv.memory = 3*1024
     lv.cpus = 4
